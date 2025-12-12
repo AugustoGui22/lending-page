@@ -1,110 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honda Motocar - Pós-Vendas | Peças e Oficina</title>
+
+  <!-- Fonte Baloo 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <img src="foto.jpg"alt="Foto de Augusto Gulherme Repecka">
-        <h1>Augusto Guilherme repecka</h1>
-        <p><strong>“Mesmo em mares revoltos, eu continuo navegando — porque meu sonho vale cada cicatriz.”</strong></p>                
-    </header>
-    
+  <header id="inicio">
+    <div class="header-content">
+      <!-- Troque para o logo/símbolo Honda se desejar -->
+      <img src="foto.jpg" alt="Honda Motocar - Pós-Vendas" class="profile-photo" />
+
+      <div class="header-text">
+        <h1>Honda Motocar • Pós-Vendas</h1>
+        <p class="tagline">
+          Peças e Oficina 2 Rodas • Agendamento de Revisão • Orçamentos • Garantia • Acessórios
+        </p>
+      </div>
+    </div>
+
     <nav>
-        <ul>
-            <li><a href="#SobreMim">SobreMim</a></li>
-            <li><a href="#Habilidades">Habilidades</a></li>
-            <li><a href="#Projetos">Projetos</a></li>
-        </ul>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#agendamento">Agendamento</a></li>
+        <li><a href="#orcamentos">Orçamentos</a></li>
+        <li><a href="#garantia">Garantia</a></li>
+        <li><a href="#pecas">Peças & Acessórios</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
+  <main>
+    <!-- APRESENTAÇÃO -->
+    <section id="servicos" class="card">
+      <h2>Atendimento Pós-Vendas</h2>
+      <p>
+        Aqui você encontra suporte completo para a sua Honda: agendamento de revisões, serviços de oficina,
+        orçamentos, garantia, venda de peças originais e acessórios.
+      </p>
+      <p>
+        Nosso objetivo é garantir segurança, desempenho e durabilidade para sua motocicleta, com atendimento
+        claro e orientações objetivas sobre cada etapa do serviço.
+      </p>
+    </section>
 
-        <!--<details id="#SobreMim">
-            <summary>SobreMim</summary>
-            <p><strong>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e em constante evolução. 
-                Com experiências diversas que me tornaram adaptável, comunicativo e curioso, venho explorando o desenvolvimento de 
-                software com foco em soluções web. Estou aprendendo lógica de programação, metodologias ágeis e linguagens como HTML, 
-                CSS, JavaScript, além de noções iniciais de Node.js e bancos de dados — cada linha de código representa um novo passo nessa jornada que está só começando.</strong></p>           
-        </details>
+    <!-- PRINCIPAIS SERVIÇOS -->
+    <section id="agendamento" class="card">
+      <h2>Agendamento de Revisão e Serviços</h2>
+      <p>
+        Faça o agendamento da sua revisão (por tempo ou quilometragem) e também de serviços gerais
+        como diagnóstico, manutenção preventiva e corretiva.
+      </p>
 
-        <details id="#Habilidades">
-            <summary>Habilidades</summary>
-            <p><strong>JavaScript, HTML, CSS, Node.js, Python, C, Java</strong></p>
-            <h4>Idiomas</h4>
-            <p><strong>Inglês (Avançado), Libras (Básico)</strong></p>
-            <h4>Outros</h4>
-            <p><strong>Photoshop (básico), Sony Vegas(edição de video)</strong></p>
-        </details>
+      <h3>O que você pode agendar</h3>
+      <ul class="tag-list">
+        <li>Revisões programadas</li>
+        <li>Troca de óleo e filtros</li>
+        <li>Freios e suspensão</li>
+        <li>Diagnóstico / Raster</li>
+        <li>Elétrica</li>
+        <li>Check-up preventivo</li>
+      </ul>
 
-        <details id="#Projetos">
-            <summary>Projetos</summary>
-            <h2></h2>
-            <p></p>
-        </details>-->
+      <!-- Ajuste os links conforme seu WhatsApp/telefone -->
+      <a class="btn" href="https://wa.me/554391592903" target="_blank" rel="noopener noreferrer">
+        Agendar pelo WhatsApp
+      </a>
+      <a class="btn" href="tel:+554391592903">
+        Ligar agora
+      </a>
+    </section>
 
-        <section id="SobreMim">
-            <details>
-                <summary>SobreMim</summary>
-            <h3>Sobre Mim</h3>
-            <p><strong>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e em constante evolução. 
-            Com experiências diversas que me tornaram adaptável, comunicativo e curioso, venho explorando o desenvolvimento de software com foco em soluções web. 
-            Estou aprendendo lógica de programação, metodologias ágeis e linguagens como HTML, CSS, JavaScript, além de noções iniciais de Node.js e bancos de dados — 
-            cada linha de código representa um novo passo nessa jornada que está só começando!.</strong></p>
-            </details>
-        </section>
+    <!-- ORÇAMENTOS -->
+    <section id="orcamentos" class="card">
+      <h2>Orçamentos</h2>
+      <p>
+        Solicite orçamento de serviços e peças com transparência e agilidade.
+        Caso seja necessário desmontagem para diagnóstico completo, explicamos antes as possibilidades
+        de ajuste no orçamento mediante autorização.
+      </p>
 
-         <section id="Habilidades">
-             <details>
-                <summary>Habilidades</summary>
-            <h3>Habilidades e Competências</h3>
-            <p><strong>JavaScript, HTML, CSS, Node.js, Python, C, Java</strong></p>
-            <h4>Idiomas</h4>
-            <p><strong>Inglês (Avançado), Libras (Básico)</strong></p>
-            <h4>Outros</h4>
-            <p><strong>Photoshop (básico), Sony Vegas(edição de video)</strong></p>
-            </details>            
-        </section>
+      <h3>Tipos de orçamento</h3>
+      <ul class="tag-list">
+        <li>Revisões</li>
+        <li>Manutenção corretiva</li>
+        <li>Elétrica</li>
+        <li>Injeção / diagnóstico</li>
+        <li>Peças e acessórios</li>
+      </ul>
 
-        <section id="Projetos">
-            <details>
-              <summary>Projetos</summary>                      
-            <article>
-            <h3>Portfólio Pessoal</h3>
-            <p>Um site  desenvolvido com HTML, CSS e JavaScript para orientaçoes.</p>
-            <a href="https://www.w3schools.com/tags/tag_details.asp" target="_blank">Ver Projeto</a>
-             </article>
-             <article>
-            <h3>Pagina web</h3>
-            <p>Pagina web que permite Corrigir, editar e excluir tarefas.</p>
-            <a href="https://todolistficticio.com" target="_blank">Ver Projeto</a>
-            </article>
-            </details>
-        </section>
+      <a class="btn" href="https://wa.me/554391592903?text=Olá!%20Quero%20solicitar%20um%20orçamento%20para%20minha%20moto.%20Modelo%3A%20____%20Ano%3A%20____%20KM%3A%20____%20Serviço%2Fpeça%3A%20____"
+         target="_blank" rel="noopener noreferrer">
+        Pedir orçamento no WhatsApp
+      </a>
+    </section>
 
-        <aside>
-            <h3>Informaçoes Extras</h3>
-            <p><strong>Sou movido pela curiosidade — sempre quero entender como as coisas funcionam, aprender algo novo ou explorar uma ideia diferente.</strong></p>
-            <p><strong>A tecnologia me atrai não só pelas possibilidades, mas pela forma como conecta tudo e todos.</strong></p>
-            <p><strong>Treinar musculação faz parte da minha rotina e me ajuda a manter o foco, a disciplina e o equilíbrio entre mente e corpo.</strong></p>
-            <p><strong>Gosto de conversar, trocar ideias e estar com pessoas — acredito que boas conexões fazem diferença em qualquer jornada.</strong></p>
-            <p><strong>No tempo livre, estou quase sempre em frente ao PC jogando, assistindo animes (que me inspiram demais) ou descobrindo algo novo que me desafie.</strong></p>
-            <h2>Meu perfil no linkedin</h2>
-            <a href="https://www.linkedin.com/in/augusto-guilherme-repecka-353999360/" target="_blank">Veja mais sobre minha trajetória</a>
-        </aside>
+    <!-- GARANTIA -->
+    <section id="garantia" class="card">
+      <h2>Garantia</h2>
+      <p>
+        Realizamos orientação e suporte para processos de garantia, seguindo os padrões e procedimentos
+        recomendados pela Honda, com registros técnicos e testes quando necessários.
+      </p>
 
-    </main>
+      <h3>Como podemos ajudar</h3>
+      <ul class="tag-list">
+        <li>Abertura de análise</li>
+        <li>Orientação de prazos</li>
+        <li>Documentação</li>
+        <li>Diagnóstico técnico</li>
+        <li>Acompanhamento do processo</li>
+      </ul>
 
-    <footer>
-        <h2>Formas para contato:</h2>        
-        <p>repeckaaugusto@gmail.com</p>
-        <p>(43)99810-6110</p>
-        <p>Direitos Autorais: &copy;2025 - Augusto Guilherme repecka</p>
-    </footer>
-    
+      <a class="btn"
+         href="https://wa.me/554391592903?text=Olá!%20Preciso%20de%20ajuda%20com%20garantia.%20Modelo%3A%20____%20Ano%3A%20____%20Chassi%3A%20____%20Descrição%20do%20problema%3A%20____"
+         target="_blank" rel="noopener noreferrer">
+        Falar sobre garantia
+      </a>
+    </section>
+
+    <!-- PEÇAS E ACESSÓRIOS -->
+    <section id="pecas" class="card">
+      <h2>Venda de Peças e Acessórios</h2>
+      <p>
+        Trabalhamos com peças originais Honda e acessórios para manter sua moto sempre em padrão de fábrica,
+        com segurança e confiabilidade.
+      </p>
+
+      <h3>Itens mais procurados</h3>
+      <ul class="tag-list">
+        <li>Óleo e filtros</li>
+        <li>Pastilhas / lonas</li>
+        <li>Kits de transmissão</li>
+        <li>Cabos e manetes</li>
+        <li>Baterias</li>
+        <li>Acessórios originais</li>
+      </ul>
+
+      <a class="btn"
+         href="https://wa.me/554391592903?text=Olá!%20Quero%20consultar%20uma%20peça%2Facessório.%20Modelo%3A%20____%20Ano%3A%20____%20Peça%2Facessório%3A%20____"
+         target="_blank" rel="noopener noreferrer">
+        Consultar peça no WhatsApp
+      </a>
+    </section>
+
+    <!-- OUTROS -->
+    <section id="outros" class="card">
+      <h2>Outros Atendimentos</h2>
+      <p>
+        Se você precisa de suporte com qualquer assunto relacionado ao pós-vendas, conte conosco.
+        Vamos orientar o melhor caminho e direcionar para o serviço correto.
+      </p>
+
+      <h3>Exemplos</h3>
+      <ul class="tag-list">
+        <li>Dúvidas sobre revisão por KM/tempo</li>
+        <li>Check-list pré-viagem</li>
+        <li>Agendamento de retorno</li>
+        <li>Orientações de manutenção</li>
+        <li>Consulta de disponibilidade</li>
+      </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="card">
+      <h2>Contato Pós-Vendas</h2>
+
+      <p><strong>WhatsApp / Telefone:</strong>
+        <a href="tel:+554391592903">(43) 9159-2903</a>
+      </p>
+
+      <p><strong>E-mail:</strong>
+        <a href="mailto:repeckaaugusto@gmail.com">repeckaaugusto@gmail.com</a>
+      </p>
+
+      <p><strong>Atendimento:</strong> Peças e Oficina • Pós-vendas Honda Motocar</p>
+
+      <a class="btn" href="https://wa.me/554391592903" target="_blank" rel="noopener noreferrer">
+        Chamar no WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Honda Motocar • Pós-Vendas — Peças e Oficina • &copy; 2025</p>
+  </footer>
 </body>
 </html>
